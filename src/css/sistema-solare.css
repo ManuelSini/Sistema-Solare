@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{margin: 0;
+    padding: 0;
+    font-size: 0;
+     font-family: "Rye", serif;
+     
+    
+   
+}
+p{
+    font-size: 16px;
+}
+
+/* HEADER */
+
+#header{
+    margin-top: 0;
+    background-color: #14213dff;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+}
+h1{
+    font-size: 58px;
+    color: #fca311ff;
+    text-shadow: 3px 3px 2px #ffffffff;
+    margin: 0;
+}
+
+/* BODY */
+h2{
+    font-size: 24px;
+}
+div#info{
+    background-color: #fca311ff;
+    border: 3px solid #000000ff;
+    margin: 10px 10px 0;
+    padding: 10px;
+}
+ul{
+    padding: 0;
+}
+li{
+    font-size: 16px;
+   /*  list-style-image: url(../../assets/img/icons8-planet-16.png); */
+   list-style: none;
+   background-image: url(../../assets/img/icons8-planet-16.png);
+   background-repeat: no-repeat;
+   padding-left: 25px;
+}
+
+/* BODY-CARD */
+
+div#body{
+   margin:  0;
+}
+div.card{
+    display: inline-block;
+    border: 2px solid #000000ff;
+    width: calc(33.3% - 20px);
+    margin: 10px;
+
+}
+div.header{
+    border-bottom:2px solid #000000ff;
+    text-align: center;
+}
+
+div.body{
+    padding: 10px;
+}
+ div.body p{
+    text-align: center;
+}
+
+div.footer{
+    border-top: 2px solid #000000ff ;
+    text-align: center;
+}
+/* FOOTER */
+
+div#footer{
+    margin: 0;
+    background-color: #fca311ff;
+    
+     padding: 10px 10px;
+}
+div#footer p a{
+    margin-left: 30px;
+}
+div#footer p{
+    font-size: 12px;
+}
