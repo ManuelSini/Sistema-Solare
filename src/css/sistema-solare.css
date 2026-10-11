@@ -5,48 +5,49 @@
 
 body{margin: 0;
     padding: 0;
-    font-size: 0;
+ 
      font-family: "Rye", serif;
      
     
    
 }
-p{
-    font-size: 16px;
-}
+
 
 /* HEADER */
 
 #header{
     margin-top: 0;
-    background-color: #14213dff;
     text-align: center;
     width: 100%;
     height: 200px;
     line-height: 200px;
+    background-image: radial-gradient(circle closest-side ,#ffffffff 30px, #fca311ff 60px, #14213dff);
 }
 h1{
-    font-size: 58px;
+    font-size: 3.4rem;
     color: #fca311ff;
     text-shadow: 3px 3px 2px #ffffffff;
     margin: 0;
 }
 
 /* BODY */
+
 h2{
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 20px 0;
 }
 div#info{
     background-color: #fca311ff;
     border: 3px solid #000000ff;
-    margin: 10px 10px 0;
+    margin: 20px;
     padding: 10px;
 }
 ul{
     padding: 0;
 }
 li{
-    font-size: 16px;
+   
    /*  list-style-image: url(../../assets/img/icons8-planet-16.png); */
    list-style: none;
    background-image: url(../../assets/img/icons8-planet-16.png);
@@ -57,19 +58,46 @@ li{
 /* BODY-CARD */
 
 div#body{
-   margin:  0;
+    margin: 10px;
+   
 }
 div.card{
-    display: inline-block;
+    
+    float: left;
     border: 2px solid #000000ff;
-    width: calc(33.3% - 20px);
-    margin: 10px;
+    width: calc(33.333% - 20px);
+    margin: 10px ;
+    box-shadow: 2px 2px 9px rgb(7, 74, 216), -2px -2px 9px#fca311ff;
+    
 
 }
+div.card:hover > div.header{
+    background-color: rgb(0, 44, 140);
+}
+div.card:hover > div.header h2{
+    color: #fca311ff;
+}
+
+.clearfix{
+    clear: both;
+}
+div.card:nth-of-type(3n+1) {
+   /*  margin-left: 10px; */
+     /* width: calc(33.3333% - 10px); */
+
+} 
+div.card:nth-of-type(3n) {
+    
+   /*  margin-right: 10px; */
+   /*   width: calc(33.3333% - 10px); */
+
+} 
+
 div.header{
     border-bottom:2px solid #000000ff;
     text-align: center;
 }
+
 
 div.body{
     padding: 10px;
@@ -81,6 +109,16 @@ div.body{
 div.footer{
     border-top: 2px solid #000000ff ;
     text-align: center;
+}
+div.footer p{ cursor:pointer;
+    padding: 8px ;
+    margin: 8px 10%;
+    font-size: 0.8rem;
+}
+div.footer p:hover{
+    border-radius:80px ;
+    background-color: rgb(6, 6, 186);
+    color: #fca311ff;
 }
 /* FOOTER */
 
@@ -94,5 +132,5 @@ div#footer p a{
     margin-left: 30px;
 }
 div#footer p{
-    font-size: 12px;
+    font-size: 0.8rem;
 }
