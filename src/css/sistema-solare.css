@@ -93,13 +93,15 @@ h1{
     border: 1px solid #ffffffff;
    
  }
- .navbar_second_level > ul ul li a:hover {
+ .navbar_second_level ul ul.pianeti > li:hover a {
    
     background-color: #fca311ff;
     color: #14213dff;
  }
 
 /*  MENU DROPDOWN */
+
+
 li.dropdown:hover .content_dropdown {
     display: block;
 
@@ -167,7 +169,10 @@ section.card{
     margin: 10px ;
     box-shadow: 2px 2px 9px rgb(7, 74, 216), -2px -2px 9px#fca311ff;
     
-
+}
+section.card a{
+    text-decoration: none;
+    color: black;
 }
 section.card:hover > header.header{
     background-color: rgb(0, 44, 140);
@@ -220,15 +225,15 @@ footer.footer p:hover{
 }
 /* FOOTER */
 
-div#footer{
+section#footer{
     margin: 0;
     background-color: #fca311ff;
     
      padding: 10px 10px;
 }
-div#footer p a{
+section#footer p a{
     margin-left: 30px;
 }
-div#footer p{
+section#footer p{
     font-size: 0.8rem;
 }
