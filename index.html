@@ -1,17 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Solare</title>
-    <link rel="stylesheet" href="../src/css/sistema-solare.css">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="sistema solare,pianeti,pianeta,sole,terra" />
+    <!-- prettier-ignore -->
+    <meta name="description" content="Il sistema solare - una overview del nostro sistema solare"/>
+    <meta name="author" content="Nicola Ciaco" />
+    <meta name="generator" content="Vscode 1.82.2" />
+    <meta name="copyright" content="Nicola Ciaco" />
+    <meta name="robots" content="index" />
+    <title>Il sistema solare</title>
+    <link rel="stylesheet" href="./src/css/sistema-solare.css">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Isometra&family=Rye&family=Yatra+One&display=swap');
 </style>
 </head>
 <body>
-    <div id="header"><h1>il Sistema Solare</h1></div>
-    <div id="info">
+    <header id="header_main">
+        
+        <h1>il Sistema Solare</h1>
+        <nav class="navbar_second_level">
+            <ul>
+                <li><a href="#">Pianeti</a>
+                <ul class="pianeti">
+                    <li><a href="#">mercurio</a></li>
+                    <li><a href="#">venere</a></li>
+                    <li><a href="#">terra</a></li>
+                    <li><a href="#">marte</a></li>
+                    <li><a href="#">giove</a></li>
+                    <li><a href="#">saturno</a></li>
+                    <li><a href="#">urano</a></li>
+                    <li><a href="#">nettuno</a></li>
+                </ul>
+            
+                    <li class="dropdown"><a href="#">Satelliti</a>
+                    
+                     <div class="content_dropdown">
+                      <div class="row">
+                          <div class="column">
+                            <header>
+                                <h2>Terra</h2>
+                            </header>
+                             <a href="#">A</a>
+                             <a href="#">B</a>
+                             <a href="#">C</a>
+                             <a href="#">D</a>
+                             <a href="#">E</a>
+                          </div>
+                          <div class="column">
+                             <header>
+                                <h2>Marte</h2>
+                             </header>
+                             <a href="#">A</a>
+                             <a href="#">B</a>
+                             <a href="#">C</a>
+                             <a href="#">D</a>
+                             <a href="#">E</a>
+                          </div>
+                          <div class="column">
+                             <header>
+                                <h2>Giove</h2>
+                             </header>
+                              <a href="#">A</a>
+                              <a href="#">B</a>
+                              <a href="#">C</a>
+                              <a href="#">D</a>
+                              <a href="#">E</a>
+                           </div>
+                           <div class="clearfix"></div>
+                           <div class="row">
+                          <div class="column">
+                             <header>
+                                <h2>Saturno</h2>
+                             </header>
+                             <a href="#">A</a>
+                             <a href="#">B</a>
+                             <a href="#">C</a>
+                             <a href="#">D</a>
+                             <a href="#">E</a>
+                          </div>
+                          <div class="column">
+                             <header>
+                                <h2>Urano</h2>
+                             </header>
+                             <a href="#">A</a>
+                             <a href="#">B</a>
+                             <a href="#">C</a>
+                             <a href="#">D</a>
+                             <a href="#">E</a>
+                          </div>
+                          <div class="column">
+                             <header>
+                                <h2>Nettuno</h2>
+                             </header>
+                              <a href="#">A</a>
+                              <a href="#">B</a>
+                              <a href="#">C</a>
+                              <a href="#">D</a>
+                              <a href="#">E</a>
+                           </div>
+                           <div class="clearfix"></div>
+                            
+                        </div>
+                     </div>
+                    </li>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="./src/html/contattaci.html">Contattaci</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section id="info">
         <h2>Informazioni sul Sistema Solare</h2>
         <p>Il <strong>sistema solare</strong> è un sistema planetario costituito da una varietà di corpi celesti mantenuti in orbita dalla forza gravitazionale del Sole; ha un diametro di circa 120-130 au[1] - 0,0019 anni luce, inteso come la zona dello spazio che è sottoposta al vento solare, tralasciando l'immensa zona sottoposta alla sola gravità solare. È situato nel braccio di Orione della Via Lattea e orbita attorno al centro galattico a una distanza di circa 26700 anni luce e una velocità di 230 km/s;[2] si stima che il sistema solare impieghi circa 225-250 milioni di anni per completare un giro attorno al centro galattico.
         </p>
@@ -27,52 +127,52 @@
             <li>Nettuno</li>
         </ul>
         <p>i cinque pianeti nani sono: Cerere, situato nella Fascia principale degli asteroidi, Plutone, Haumea, Makemake situati nella Fascia di Kuiper ed Eris, che si trova nel disco diffuso[4][7]. Il vento solare, un flusso di plasma generato dall'espansione continua della corona solare, permea l'intero sistema solare, creando una bolla nel mezzo interstellare conosciuta come eliosfera, che si estende fino oltre alla metà del disco diffuso.</p>
-    </div>
-    <div id="body">
-        <div class="card">
-            <div class="header"><h2>Mercurio</h2></div>
+    </section>
+    <main id="body">
+        <section class="card">
+            <header class="header"><h2>Mercurio</h2></header>
             <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-            <div class="footer"><p>Altre Informazioni</p></div>
-        </div>
-         <div class="card">
-            <div class="header"><h2>Venere</h2></div>
+            <footer class="footer"><p>Altre Informazioni</p></footer>
+        </section>
+         <section class="card">
+            <header class="header"><h2>Venere</h2></header>
             <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-            <div class="footer"><p>Altre Informazioni</p></div>
-        </div>
-         <div class="card">
-            <div class="header"><h2>Terra</h2></div>
+            <footer class="footer"><p>Altre Informazioni</p></footer>
+        </section>
+         <section class="card">
+            <header class="header"><h2>Terra</h2></header>
             <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-            <div class="footer"><p>Altre Informazioni</p></div>
-        </div>
-         <div class="card">
-            <div class="header"><h2>Marte</h2></div>
+            <footer class="footer"><p>Altre Informazioni</p></footer>
+        </section>
+         <section class="card">
+            <header class="header"><h2>Marte</h2></header>
             <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-            <div class="footer"><p>Altre Informazioni</p></div>
-        </div>
-         <div class="card">
-            <div class="header"><h2>Giove</h2></div>
+            <footer class="footer"><p>Altre Informazioni</p></footer>
+        </section>
+         <section class="card">
+            <header class="header"><h2>Giove</h2></header>
             <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-            <div class="footer"><p>Altre Informazioni</p></div>
-        </div>
-         <div class="card">
-            <div class="header"><h2>Saturno</h2></div>
+            <footer class="footer"><p>Altre Informazioni</p></footer>
+        </section>
+         <section class="card">
+            <header class="header"><h2>Saturno</h2></header>
             <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-            <div class="footer"><p>Altre Informazioni</p></div>
-        </div>
-         <div class="card">
-            <div class="header"><h2>Urano</h2></div>
+            <footer class="footer"><p>Altre Informazioni</p></footer>
+        </section>
+         <section class="card">
+            <header class="header"><h2>Urano</h2></header>
             <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-            <div class="footer"><p>Altre Informazioni</p></div>
-        </div>
-         <div class="card">
-            <div class="header"><h2>Nettuno</h2></div>
+            <footer class="footer"><p>Altre Informazioni</p></footer>
+        </section>
+         <section class="card">
+            <header class="header"><h2>Nettuno</h2></header>
             <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-            <div class="footer"><p>Altre Informazioni</p></div>
-        </div>
+            <footer class="footer"><p>Altre Informazioni</p></footer>
+        </section>
         <div class="clearfix"></div>
 
 
-    </div>
+    </main>
 
 
     <div id="footer"> 

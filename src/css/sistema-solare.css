@@ -15,29 +15,127 @@ body{margin: 0;
 
 /* HEADER */
 
-#header{
+#header_main{
     margin-top: 0;
     text-align: center;
     width: 100%;
     height: 200px;
     line-height: 200px;
     background-image: radial-gradient(circle closest-side ,#ffffffff 30px, #fca311ff 60px, #14213dff);
+    position: relative;
 }
 h1{
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: #fca311ff;
     text-shadow: 3px 3px 2px #ffffffff;
     margin: 0;
+    padding: 0; 
+     float: left;
+     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);     
+}
+/* NAVBAR */
+.navbar_second_level {
+   /*  padding-top: 165px; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: normal;
 }
 
-/* BODY */
+.navbar_second_level > ul,
+ .navbar_second_level > ul ul  {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.navbar_second_level > ul > li {
+    float: left;
+    list-style: none;
+        
+}
+
+.navbar_second_level > ul > li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+
+}
+.navbar_second_level ul li:hover ul {
+    /* display: block; */
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* NAVBAR SECONDO LIVELLO */
+
+.navbar_second_level ul ul.pianeti{
+    position: absolute;
+    /* display: none; */
+    opacity: 0;
+    transition: 0.3s; 
+}
+
+.navbar_second_level ul ul.pianeti li{
+    list-style: none;
+    max-width: 100%;
+}
+ .navbar_second_level  ul  ul.pianeti:first-of-type li a{
+      display: block;
+    color: white;
+    text-decoration: none;
+    line-height: normal;
+    background-color: #14213dff;
+    padding: 5px;
+    border: 1px solid #ffffffff;
+   
+ }
+ .navbar_second_level > ul ul li a:hover {
+   
+    background-color: #fca311ff;
+    color: #14213dff;
+ }
+
+/*  MENU DROPDOWN */
+li.dropdown:hover .content_dropdown {
+    display: block;
+
+}
+
+.content_dropdown{
+    background-color: rgb(214, 213, 213);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100vw;
+    display: none;
+   box-shadow: 5px 5px 15px, inset 5px -5px 10px;
+    
+}
+ .column{
+    float: left;
+    width: 33.3333%;
+    padding-bottom: 15px;
+}
+.column a{
+    display: block;
+    text-decoration: none;
+    color: #fca311ff;
+    padding: 4px;
+}
+
+
+/* MAIN */
 
 h2{
     font-size: 1.5rem;
     margin: 0;
     padding: 20px 0;
 }
-div#info{
+section#info{
     background-color: #fca311ff;
     border: 3px solid #000000ff;
     margin: 20px;
@@ -46,7 +144,7 @@ div#info{
 ul{
     padding: 0;
 }
-li{
+section li{
    
    /*  list-style-image: url(../../assets/img/icons8-planet-16.png); */
    list-style: none;
@@ -55,13 +153,13 @@ li{
    padding-left: 25px;
 }
 
-/* BODY-CARD */
+/* main-CARD */
 
 div#body{
     margin: 10px;
    
 }
-div.card{
+section.card{
     
     float: left;
     border: 2px solid #000000ff;
@@ -71,29 +169,29 @@ div.card{
     
 
 }
-div.card:hover > div.header{
+section.card:hover > header.header{
     background-color: rgb(0, 44, 140);
 }
-div.card:hover > div.header h2{
+section.card:hover > header.header h2{
     color: #fca311ff;
 }
 
 .clearfix{
     clear: both;
 }
-div.card:nth-of-type(3n+1) {
-   /*  margin-left: 10px; */
-     /* width: calc(33.3333% - 10px); */
+/* .card:nth-of-type(3n+1) {
+    margin-left: 10px;
+     width: calc(33.3333% - 10px);
 
 } 
-div.card:nth-of-type(3n) {
+.card:nth-of-type(3n) {
     
-   /*  margin-right: 10px; */
-   /*   width: calc(33.3333% - 10px); */
+    margin-right: 10px;
+     width: calc(33.3333% - 10px);
 
-} 
+}  */
 
-div.header{
+header.header{
     border-bottom:2px solid #000000ff;
     text-align: center;
 }
@@ -106,16 +204,16 @@ div.body{
     text-align: center;
 }
 
-div.footer{
+footer.footer{
     border-top: 2px solid #000000ff ;
     text-align: center;
 }
-div.footer p{ cursor:pointer;
+footer.footer p{ cursor:pointer;
     padding: 8px ;
     margin: 8px 10%;
     font-size: 0.8rem;
 }
-div.footer p:hover{
+footer.footer p:hover{
     border-radius:80px ;
     background-color: rgb(6, 6, 186);
     color: #fca311ff;
