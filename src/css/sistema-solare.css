@@ -1,17 +1,10 @@
 *{
     box-sizing: border-box;
 }
-
-
 body{margin: 0;
-    padding: 0;
- 
+    padding: 0; 
      font-family: "Rye", serif;
-     
-    
-   
 }
-
 
 /* HEADER */
 
@@ -53,10 +46,8 @@ h1{
 
 .navbar_second_level > ul > li {
     float: left;
-    list-style: none;
-        
+    list-style: none;       
 }
-
 .navbar_second_level > ul > li > a {
     display: block;
     color: white;
@@ -91,7 +82,6 @@ h1{
     background-color: #14213dff;
     padding: 5px;
     border: 1px solid #ffffffff;
-   
  }
  .navbar_second_level ul ul.pianeti > li:hover a {
    
@@ -101,10 +91,8 @@ h1{
 
 /*  MENU DROPDOWN */
 
-
 li.dropdown:hover .content_dropdown {
     display: block;
-
 }
 
 .content_dropdown{
@@ -115,7 +103,6 @@ li.dropdown:hover .content_dropdown {
     width: 100vw;
     display: none;
    box-shadow: 5px 5px 15px, inset 5px -5px 10px;
-    
 }
  .column{
     float: left;
@@ -128,7 +115,6 @@ li.dropdown:hover .content_dropdown {
     color: #fca311ff;
     padding: 4px;
 }
-
 
 /* MAIN */
 
@@ -146,9 +132,7 @@ section#info{
 ul{
     padding: 0;
 }
-section li{
-   
-   /*  list-style-image: url(../../assets/img/icons8-planet-16.png); */
+section li{   
    list-style: none;
    background-image: url(../../assets/img/icons8-planet-16.png);
    background-repeat: no-repeat;
@@ -159,16 +143,13 @@ section li{
 
 div#body{
     margin: 10px;
-   
 }
 section.card{
-    
     float: left;
     border: 2px solid #000000ff;
     width: calc(33.333% - 20px);
     margin: 10px ;
     box-shadow: 2px 2px 9px rgb(7, 74, 216), -2px -2px 9px#fca311ff;
-    
 }
 section.card a{
     text-decoration: none;
@@ -180,35 +161,19 @@ section.card:hover > header.header{
 section.card:hover > header.header h2{
     color: #fca311ff;
 }
-
 .clearfix{
     clear: both;
 }
-/* .card:nth-of-type(3n+1) {
-    margin-left: 10px;
-     width: calc(33.3333% - 10px);
-
-} 
-.card:nth-of-type(3n) {
-    
-    margin-right: 10px;
-     width: calc(33.3333% - 10px);
-
-}  */
-
 header.header{
     border-bottom:2px solid #000000ff;
     text-align: center;
 }
-
-
 div.body{
     padding: 10px;
 }
  div.body p{
     text-align: center;
 }
-
 footer.footer{
     border-top: 2px solid #000000ff ;
     text-align: center;
@@ -223,6 +188,7 @@ footer.footer p:hover{
     background-color: rgb(6, 6, 186);
     color: #fca311ff;
 }
+
 /* FOOTER */
 
 section#footer{
