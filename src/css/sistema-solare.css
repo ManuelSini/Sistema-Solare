@@ -155,10 +155,10 @@ section.card a{
     text-decoration: none;
     color: black;
 }
-section.card:hover > header.header{
+section.card > a:hover > header.header{
     background-color: rgb(0, 44, 140);
 }
-section.card:hover > header.header h2{
+section.card > a:hover > header.header h2{
     color: #fca311ff;
 }
 .clearfix{
