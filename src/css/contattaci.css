@@ -1,0 +1,143 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../assets/img/back7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-page{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+.form{
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    height: fit-content;
+    padding: 24px;
+    background-color: rgba(230, 230, 232, 0.94);
+    border: 1px solid blue;
+    border-radius: 8px;
+    box-shadow: 0 0 9px blue;
+}
+
+.form h2{
+    text-align: center;
+}
+
+.back-home{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.form form > p{
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.form label{
+    font-size: 1rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea{
+    width: 100%;
+    min-width: 0;
+    padding: 8px;
+    border: 1px solid #777;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.form input[type="text"]::placeholder,
+.form input[type="email"]::placeholder,
+.form textarea::placeholder{
+    font-style: italic;
+}
+
+.form input[type="text"],
+.form input[type="email"]{
+    min-height: 40px;
+}
+
+.form textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border: 2px solid blue;
+    box-shadow: 0 0 6px rgba(1, 1, 208, 0.878);
+    outline:none;
+}
+
+.form .privacy{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.form .privacy label{
+    font-size: 0.9rem;
+}
+
+.form .privacy p{
+    display: block;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.form .privacy a{
+    color: #14213d;
+}
+
+.form .form-notice{
+    display: block;
+    font-size: 0.9rem;
+}
+
+button#submit{
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    padding: 0.5em 1em;
+    border: 0;
+    border-radius: 100px;
+    color: aliceblue;
+    background-color: rgb(1, 1, 95);
+    background-image: linear-gradient(to bottom, rgb(1, 1, 104), rgb(3, 3, 192));
+    box-shadow: 0 0.25em 0 rgba(1, 1, 125, 0.503), inset 0 1px 0 rgba(128, 128, 128, 0.5);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body > footer{
+    width: 100%;
+}
+
+@media (max-width: 480px){
+    .contact-page{
+        padding: 24px 12px;
+    }
+    .form{
+        padding: 20px 16px;
+    }
+    .form form > p{
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}

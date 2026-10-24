@@ -3,8 +3,7 @@
 }
 body{margin: 0;
     padding: 0;
- 
-     font-family: "Rye", serif;
+    font-family: "Rye", serif;
 }
 
 /* HEADER */
@@ -36,39 +35,37 @@ h1{
     right: 0;
     bottom: 0;
     line-height: normal;
+    z-index: 100;
 }
-
 .navbar_second_level > ul,
  .navbar_second_level > ul ul  {
     margin: 0;
     padding: 0;
-    float: right;
 }
-
 .navbar_second_level > ul > li {
-    float: left;
+    float: none;
     list-style: none;     
 }
-
+.navbar_second_level > ul {
+    display: flex;
+    justify-content: flex-end;
+}
 .navbar_second_level > ul > li > a {
     display: block;
     color: white;
     text-decoration: none;
     padding: 14px;
 }
-.navbar_second_level ul li:hover ul {
-    /* display: block; */
-    opacity: 1;
-    transition: 0.3s;
+.navbar_second_level > ul > li.nav-pianeti:hover > ul.pianeti,
+.navbar_second_level > ul > li.nav-pianeti:focus-within > ul.pianeti{
+    display: block;
 }
 
 /* NAVBAR SECONDO LIVELLO */
 
 .navbar_second_level ul ul.pianeti{
     position: absolute;
-    /* display: none; */
-    opacity: 0;
-    transition: 0.3s; 
+    display: none;
 }
 
 .navbar_second_level ul ul.pianeti li{
@@ -93,11 +90,10 @@ h1{
 
 /*  MENU DROPDOWN */
 
-
-li.dropdown:hover .content_dropdown {
+li.dropdown:hover .content_dropdown,
+li.dropdown:focus-within .content_dropdown {
     display: block;
 }
-
 .content_dropdown{
     background-color: rgb(214, 213, 213);
     position: absolute;
@@ -107,17 +103,69 @@ li.dropdown:hover .content_dropdown {
     display: none;
    box-shadow: 5px 5px 15px, inset 5px -5px 10px;
 }
-
  .column{
     float: left;
     width: 33.3333%;
     padding-bottom: 15px;
 }
-
-.column a{
+.column span{
     display: block;
-    text-decoration: none;
-    color: #fca311ff;
+    color: #14213dff;
     padding: 4px;
 }
 
+main#terra-info{
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+main#terra-info #info{
+    background-color: #fca311ff;
+    border: 3px solid #000000ff;
+    padding: 10px 20px;
+}
+
+main#terra-info li{
+    list-style: disc;
+    margin: 8px 0 8px 24px;
+}
+
+main#terra-info a{
+    color: #14213dff;
+}
+
+section#footer{
+    margin: 0;
+    padding: 10px;
+    background-color: #fca311ff;
+}
+
+section#footer p{
+    font-size: 0.8rem;
+}
+
+section#footer p a{
+    margin-left: 30px;
+}
+
+@media (max-width: 560px){
+    #header_main{
+        height: 180px;
+    }
+    h1{
+        font-size: 2.5rem;
+        top: 20px;
+        line-height: 1.2;
+    }
+    .navbar_second_level{
+        width: 100%;
+    }
+    .navbar_second_level > ul{
+        justify-content: center;
+    }
+    .navbar_second_level > ul > li > a{
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+}

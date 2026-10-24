@@ -1,4 +1,4 @@
-*{
+*{font-family: inherit;
     box-sizing: border-box;
 }
 body{margin: 0;
@@ -26,7 +26,7 @@ h1{
      float: left;
      position: absolute;
     left: 50%;
-    transform: translateX(-50%);     
+    transform: translateX(-50%);
 }
 /* NAVBAR */
 .navbar_second_level {
@@ -35,18 +35,22 @@ h1{
     right: 0;
     bottom: 0;
     line-height: normal;
+    z-index: 100;
 }
 
 .navbar_second_level > ul,
  .navbar_second_level > ul ul  {
     margin: 0;
     padding: 0;
-    float: right;
 }
 
 .navbar_second_level > ul > li {
-    float: left;
+    float: none;
     list-style: none;       
+}
+.navbar_second_level > ul {
+    display: flex;
+    justify-content: flex-end;
 }
 .navbar_second_level > ul > li > a {
     display: block;
@@ -55,21 +59,16 @@ h1{
     padding: 14px;
 
 }
-.navbar_second_level ul li:hover ul {
-    /* display: block; */
-    opacity: 1;
-    transition: 0.3s;
+.navbar_second_level > ul > li.nav-pianeti:hover > ul.pianeti,
+.navbar_second_level > ul > li.nav-pianeti:focus-within > ul.pianeti{
+    display: block;
 }
-
 /* NAVBAR SECONDO LIVELLO */
 
 .navbar_second_level ul ul.pianeti{
     position: absolute;
-    /* display: none; */
-    opacity: 0;
-    transition: 0.3s; 
+    display: none;
 }
-
 .navbar_second_level ul ul.pianeti li{
     list-style: none;
     max-width: 100%;
@@ -91,10 +90,10 @@ h1{
 
 /*  MENU DROPDOWN */
 
-li.dropdown:hover .content_dropdown {
+li.dropdown:hover .content_dropdown,
+li.dropdown:focus-within .content_dropdown {
     display: block;
 }
-
 .content_dropdown{
     background-color: rgb(214, 213, 213);
     position: absolute;
@@ -109,10 +108,9 @@ li.dropdown:hover .content_dropdown {
     width: 33.3333%;
     padding-bottom: 15px;
 }
-.column a{
+.column span{
     display: block;
-    text-decoration: none;
-    color: #fca311ff;
+    color: #14213dff;
     padding: 4px;
 }
 
@@ -139,26 +137,40 @@ section li{
    padding-left: 25px;
 }
 
-/* main-CARD */
+/* Main cards */
 
-div#body{
-    margin: 10px;
+main#pianeti{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    margin: 20px;
 }
 section.card{
-    float: left;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
     border: 2px solid #000000ff;
-    width: calc(33.333% - 20px);
-    margin: 10px ;
     box-shadow: 2px 2px 9px rgb(7, 74, 216), -2px -2px 9px#fca311ff;
+    scroll-margin-top: 1rem;
 }
-section.card a{
+.card-link{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: inherit;
     text-decoration: none;
-    color: black;
 }
-section.card > a:hover > header.header{
+section.card:hover > header.header,
+section.card:focus-within > header.header,
+.card-link:hover > header.header,
+.card-link:focus-visible > header.header{
     background-color: rgb(0, 44, 140);
 }
-section.card > a:hover > header.header h2{
+section.card:hover > header.header h2,
+section.card:focus-within > header.header h2,
+.card-link:hover > header.header h2,
+.card-link:focus-visible > header.header h2{
     color: #fca311ff;
 }
 .clearfix{
@@ -169,6 +181,7 @@ header.header{
     text-align: center;
 }
 div.body{
+    flex: 1;
     padding: 10px;
 }
  div.body p{
@@ -182,6 +195,10 @@ footer.footer p{ cursor:pointer;
     padding: 8px ;
     margin: 8px 10%;
     font-size: 0.8rem;
+}
+footer.footer a{
+    color: inherit;
+    text-decoration: none;
 }
 footer.footer p:hover{
     border-radius:80px ;
@@ -202,4 +219,38 @@ section#footer p a{
 }
 section#footer p{
     font-size: 0.8rem;
+}
+
+@media (max-width: 900px){
+    main#pianeti{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px){
+    #header_main{
+        height: 180px;
+    }
+    h1{
+        font-size: 2.25rem;
+        top: 20px;
+        line-height: 1.2;
+    }
+    .navbar_second_level{
+        width: 100%;
+    }
+    .navbar_second_level > ul{
+        justify-content: center;
+    }
+    .navbar_second_level > ul > li > a{
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+    main#pianeti{
+        grid-template-columns: 1fr;
+        margin: 12px;
+    }
+    section#info{
+        margin: 12px;
+    }
 }

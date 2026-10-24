@@ -2,6 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="keywords" content="sistema solare,pianeti,pianeta,sole,terra" />
     <!-- prettier-ignore -->
@@ -10,7 +11,7 @@
     <meta name="generator" content="Vscode 1.82.2" />
     <meta name="copyright" content="Nicola Ciaco" />
     <meta name="robots" content="index" />
-    <title>Il sistema solare</title>
+    <title>Terra | Il sistema solare</title>
     <link rel="stylesheet" href="../css/terra.css">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Isometra&family=Rye&family=Yatra+One&display=swap');
@@ -22,51 +23,43 @@
         <h1>Terra</h1>
         <nav class="navbar_second_level">
             <ul>
-                <li><a href="#">Pianeti</a>
+                <li class="nav-pianeti"><a href="../../index.html#pianeti">Pianeti</a>
                  <ul class="pianeti">
-                    <li><a href="#">mercurio</a></li>
-                    <li><a href="#">venere</a></li>
-                    <li><a href="#">terra</a></li>
-                    <li><a href="#">marte</a></li>
-                    <li><a href="#">giove</a></li>
-                    <li><a href="#">saturno</a></li>
-                    <li><a href="#">urano</a></li>
-                    <li><a href="#">nettuno</a></li>
+                    <li><a href="../../index.html#mercurio">Mercurio</a></li>
+                    <li><a href="../../index.html#venere">Venere</a></li>
+                    <li><a href="../../index.html#terra">Terra</a></li>
+                    <li><a href="../../index.html#marte">Marte</a></li>
+                    <li><a href="../../index.html#giove">Giove</a></li>
+                    <li><a href="../../index.html#saturno">Saturno</a></li>
+                    <li><a href="../../index.html#urano">Urano</a></li>
+                    <li><a href="../../index.html#nettuno">Nettuno</a></li>
                  </ul>
                 </li>
-                    <li class="dropdown"><a href="#">Satelliti</a>
+                    <li class="dropdown"><a href="#satelliti">Satelliti</a>
                     
-                     <div class="content_dropdown">
+                     <div class="content_dropdown" id="satelliti">
                       <div class="row">
                           <div class="column">
                             <header>
                                 <h2>Terra</h2>
                             </header>
-                             <a href="#">A</a>
-                             <a href="#">B</a>
-                             <a href="#">C</a>
-                             <a href="#">D</a>
-                             <a href="#">E</a>
-                          </div>
+                             <span>Luna</span>
+                           </div>
                           <div class="column">
                              <header>
                                 <h2>Marte</h2>
                              </header>
-                             <a href="#">A</a>
-                             <a href="#">B</a>
-                             <a href="#">C</a>
-                             <a href="#">D</a>
-                             <a href="#">E</a>
-                          </div>
+                             <span>Fobos</span>
+                             <span>Deimos</span>
+                           </div>
                           <div class="column">
                              <header>
                                 <h2>Giove</h2>
                              </header>
-                              <a href="#">A</a>
-                              <a href="#">B</a>
-                              <a href="#">C</a>
-                              <a href="#">D</a>
-                              <a href="#">E</a>
+                             <span>Io</span>
+                             <span>Europa</span>
+                             <span>Ganimede</span>
+                             <span>Callisto</span>
                            </div>
                            <div class="clearfix"></div>
                            <div class="row">
@@ -74,40 +67,65 @@
                              <header>
                                 <h2>Saturno</h2>
                              </header>
-                             <a href="#">A</a>
-                             <a href="#">B</a>
-                             <a href="#">C</a>
-                             <a href="#">D</a>
-                             <a href="#">E</a>
-                          </div>
+                             <span>Titano</span>
+                             <span>Encelado</span>
+                             <span>Rea</span>
+                             <span>Giapeto</span>
+                           </div>
                           <div class="column">
                              <header>
                                 <h2>Urano</h2>
                              </header>
-                             <a href="#">A</a>
-                             <a href="#">B</a>
-                             <a href="#">C</a>
-                             <a href="#">D</a>
-                             <a href="#">E</a>
-                          </div>
+                             <span>Titania</span>
+                             <span>Oberon</span>
+                             <span>Ariel</span>
+                             <span>Umbriel</span>
+                             <span>Miranda</span>
+                           </div>
                           <div class="column">
                              <header>
                                 <h2>Nettuno</h2>
                              </header>
-                              <a href="#">A</a>
-                              <a href="#">B</a>
-                              <a href="#">C</a>
-                              <a href="#">D</a>
-                              <a href="#">E</a>
+                             <span>Tritone</span>
+                             <span>Proteo</span>
+                             <span>Nereide</span>
                            </div>
                            <div class="clearfix"></div>
                             
                         </div>
                      </div>
+                     </div>
                     </li>
-                <li><a href="#">Chi siamo</a></li>
-                <li><a href="./src/html/contattaci.html">Contattaci</a></li>
+                <li><a href="../../index.html#footer">Chi siamo</a></li>
+                <li><a href="contattaci.html">Contattaci</a></li>
                 
             </ul>
         </nav>
     </header>
+    <main id="terra-info">
+        <section id="info">
+            <h2>Il nostro pianeta</h2>
+            <p>La Terra è il terzo pianeta dal Sole e l’unico, tra quelli conosciuti, a ospitare la vita. La sua superficie è coperta in gran parte da acqua liquida e la sua atmosfera ci protegge e rende possibile la respirazione.</p>
+            <ul>
+                <li>La Luna è il suo unico satellite naturale.</li>
+                <li>La Terra impiega circa un anno per completare un’orbita intorno al Sole.</li>
+                <li>La rotazione del pianeta determina l’alternarsi del giorno e della notte.</li>
+            </ul>
+            <p><a href="../../index.html#pianeti">Torna a tutti i pianeti</a></p>
+        </section>
+    </main>
+    <footer>
+        <section id="footer">
+            <p>
+                &copy; creato da <span>Manuel Sini</span>
+            </p>
+            <p>Ultimo aggiornamento <time datetime="2026-10-24"><strong>24 ottobre 2026</strong></time></p>
+            <p>
+                <small>tutti i diritti sono protetti dalla licenza creative commons </small>
+            </p>
+        </section>
+        <a href="https://www.iubenda.com/privacy-policy/56123687" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+        <a href="https://www.iubenda.com/privacy-policy/56123687/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+    </footer>
+</body>
+</html>

@@ -3,6 +3,7 @@
   <head>
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a6bcc1f2-4454-4409-8b39-d6b0d7d10d8c" data-blockingmode="auto" type="text/javascript"></script>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="keywords" content="sistema solare,pianeti,pianeta,sole,terra" />
     <!-- prettier-ignore -->
@@ -23,51 +24,43 @@
         <h1>il Sistema Solare</h1>
         <nav class="navbar_second_level">
             <ul>
-                <li><a href="#">Pianeti</a>
+                <li class="nav-pianeti"><a href="#pianeti">Pianeti</a>
                  <ul class="pianeti">
-                    <li><a href="#">mercurio</a></li>
-                    <li><a href="#">venere</a></li>
-                    <li><a href="#">terra</a></li>
-                    <li><a href="#">marte</a></li>
-                    <li><a href="#">giove</a></li>
-                    <li><a href="#">saturno</a></li>
-                    <li><a href="#">urano</a></li>
-                    <li><a href="#">nettuno</a></li>
+                    <li><a href="#mercurio">Mercurio</a></li>
+                    <li><a href="#venere">Venere</a></li>
+                    <li><a href="#terra">Terra</a></li>
+                    <li><a href="#marte">Marte</a></li>
+                    <li><a href="#giove">Giove</a></li>
+                    <li><a href="#saturno">Saturno</a></li>
+                    <li><a href="#urano">Urano</a></li>
+                    <li><a href="#nettuno">Nettuno</a></li>
                  </ul>
                 </li>
-                    <li class="dropdown"><a href="#">Satelliti</a>
+                    <li class="dropdown"><a href="#satelliti">Satelliti</a>
                     
-                     <div class="content_dropdown">
+                     <div class="content_dropdown" id="satelliti">
                       <div class="row">
                           <div class="column">
                             <header>
                                 <h2>Terra</h2>
                             </header>
-                             <a href="#">A</a>
-                             <a href="#">B</a>
-                             <a href="#">C</a>
-                             <a href="#">D</a>
-                             <a href="#">E</a>
-                          </div>
+                             <span>Luna</span>
+                           </div>
                           <div class="column">
                              <header>
                                 <h2>Marte</h2>
                              </header>
-                             <a href="#">A</a>
-                             <a href="#">B</a>
-                             <a href="#">C</a>
-                             <a href="#">D</a>
-                             <a href="#">E</a>
-                          </div>
+                             <span>Fobos</span>
+                             <span>Deimos</span>
+                           </div>
                           <div class="column">
                              <header>
                                 <h2>Giove</h2>
                              </header>
-                              <a href="#">A</a>
-                              <a href="#">B</a>
-                              <a href="#">C</a>
-                              <a href="#">D</a>
-                              <a href="#">E</a>
+                             <span>Io</span>
+                             <span>Europa</span>
+                             <span>Ganimede</span>
+                             <span>Callisto</span>
                            </div>
                            <div class="clearfix"></div>
                            <div class="row">
@@ -75,38 +68,36 @@
                              <header>
                                 <h2>Saturno</h2>
                              </header>
-                             <a href="#">A</a>
-                             <a href="#">B</a>
-                             <a href="#">C</a>
-                             <a href="#">D</a>
-                             <a href="#">E</a>
-                          </div>
+                             <span>Titano</span>
+                             <span>Encelado</span>
+                             <span>Rea</span>
+                             <span>Giapeto</span>
+                           </div>
                           <div class="column">
                              <header>
                                 <h2>Urano</h2>
                              </header>
-                             <a href="#">A</a>
-                             <a href="#">B</a>
-                             <a href="#">C</a>
-                             <a href="#">D</a>
-                             <a href="#">E</a>
-                          </div>
+                             <span>Titania</span>
+                             <span>Oberon</span>
+                             <span>Ariel</span>
+                             <span>Umbriel</span>
+                             <span>Miranda</span>
+                           </div>
                           <div class="column">
                              <header>
                                 <h2>Nettuno</h2>
                              </header>
-                              <a href="#">A</a>
-                              <a href="#">B</a>
-                              <a href="#">C</a>
-                              <a href="#">D</a>
-                              <a href="#">E</a>
+                             <span>Tritone</span>
+                             <span>Proteo</span>
+                             <span>Nereide</span>
                            </div>
                            <div class="clearfix"></div>
                             
                         </div>
                      </div>
+                     </div>
                     </li>
-                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#footer">Chi siamo</a></li>
                 <li><a href="./src/html/contattaci.html">Contattaci</a></li>
                 
             </ul>
@@ -129,71 +120,56 @@
         </ul>
         <p>i cinque pianeti nani sono: Cerere, situato nella Fascia principale degli asteroidi, Plutone, Haumea, Makemake situati nella Fascia di Kuiper ed Eris, che si trova nel disco diffuso[4][7]. Il vento solare, un flusso di plasma generato dall'espansione continua della corona solare, permea l'intero sistema solare, creando una bolla nel mezzo interstellare conosciuta come eliosfera, che si estende fino oltre alla metà del disco diffuso.</p>
     </section>
-    <main id="body">
-        <section class="card">
-            <a href="#">
-                <header class="header"><h2>Mercurio</h2></header>
-                <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-                <footer class="footer"><p>Altre Informazioni</p></footer>
-            </a>
+    <main id="pianeti">
+        <section class="card" id="mercurio">
+            <header class="header"><h2>Mercurio</h2></header>
+            <div class="body"><p>È il pianeta più vicino al Sole e il più piccolo del Sistema Solare. La sua superficie rocciosa è ricca di crateri e le temperature variano molto tra il giorno e la notte.</p></div>
+            <footer class="footer"><p>Altre informazioni</p></footer>
         </section>
-         <section class="card">
-            <a href="#">
-                <header class="header"><h2>Venere</h2></header>
-                <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-                <footer class="footer"><p>Altre Informazioni</p></footer>
-            </a>
+        <section class="card" id="venere">
+            <header class="header"><h2>Venere</h2></header>
+            <div class="body"><p>È il secondo pianeta dal Sole. La sua atmosfera, molto densa e ricca di anidride carbonica, trattiene il calore e lo rende il pianeta più caldo del Sistema Solare.</p></div>
+            <footer class="footer"><p>Altre informazioni</p></footer>
         </section>
-         <section class="card">
-            <a href="./src/html/terra.html">
+        <section class="card" id="terra">
+            <a class="card-link" href="./src/html/terra.html">
                 <header class="header"><h2>Terra</h2></header>
-                <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-                <footer class="footer"><p>Altre Informazioni</p></footer>
+                <div class="body"><p>È il nostro pianeta: ospita acqua liquida in superficie e, per quanto sappiamo, la vita. Ha un satellite naturale, la Luna.</p></div>
+                <footer class="footer"><p>Altre informazioni</p></footer>
             </a>
         </section>
-         <section class="card">
-            <a href="#">
-                <header class="header"><h2>Marte</h2></header>
-                <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-                <footer class="footer"><p>Altre Informazioni</p></footer>
-            </a>
+        <section class="card" id="marte">
+            <header class="header"><h2>Marte</h2></header>
+            <div class="body"><p>È il quarto pianeta dal Sole ed è chiamato pianeta rosso per il colore della sua superficie, ricca di ossidi di ferro. Ha due piccole lune: Fobos e Deimos.</p></div>
+            <footer class="footer"><p>Altre informazioni</p></footer>
         </section>
-         <section class="card">
-            <a href="#">
-                <header class="header"><h2>Giove</h2></header>
-                <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-                <footer class="footer"><p>Altre Informazioni</p></footer>
-            </a>
+        <section class="card" id="giove">
+            <header class="header"><h2>Giove</h2></header>
+            <div class="body"><p>È il pianeta più grande del Sistema Solare. È un gigante gassoso famoso per la Grande Macchia Rossa, una gigantesca tempesta atmosferica.</p></div>
+            <footer class="footer"><p>Altre informazioni</p></footer>
         </section>
-         <section class="card">
-            <a href="#">
-                <header class="header"><h2>Saturno</h2></header>
-                <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-                <footer class="footer"><p>Altre Informazioni</p></footer>
-            </a>
+        <section class="card" id="saturno">
+            <header class="header"><h2>Saturno</h2></header>
+            <div class="body"><p>È un gigante gassoso circondato da un vasto sistema di anelli composti soprattutto da ghiaccio e frammenti rocciosi.</p></div>
+            <footer class="footer"><p>Altre informazioni</p></footer>
         </section>
-         <section class="card">
-            <a href="#">
-                <header class="header"><h2>Urano</h2></header>
-                <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-                <footer class="footer"><p>Altre Informazioni</p></footer>
-            </a>
+        <section class="card" id="urano">
+            <header class="header"><h2>Urano</h2></header>
+            <div class="body"><p>È un gigante ghiacciato dall’aspetto azzurro-verde. Il suo asse di rotazione è fortemente inclinato rispetto al piano della sua orbita.</p></div>
+            <footer class="footer"><p>Altre informazioni</p></footer>
         </section>
-         <section class="card">
-            <a href="#">
-                <header class="header"><h2>Nettuno</h2></header>
-                <div class="body"> <p>Mercurio è il primo pianeta del sistema solare in ordine di distanza dal Sole[5] e il più interno del nostro sistema planetario. È il più piccolo e la sua orbita è anche la più eccentrica, ovvero la meno circolare, degli otto pianeti[N 4]. Mercurio orbita in senso diretto (in senso antiorario, come molti altri pianeti del sistema solare) a una distanza media di 0,3871 au dal Sole con un periodo di rivoluzione di 87,969[1] giorni terrestri. Mercurio è anche in risonanza orbitale-rotazionale: completa tre rotazioni intorno al proprio asse ogni due orbite attorno al Sole</p></div>
-                <footer class="footer"><p>Altre Informazioni</p></footer>
-            </a>
+        <section class="card" id="nettuno">
+            <header class="header"><h2>Nettuno</h2></header>
+            <div class="body"><p>È il pianeta più lontano dal Sole. È un gigante ghiacciato, blu, caratterizzato da venti molto intensi.</p></div>
+            <footer class="footer"><p>Altre informazioni</p></footer>
         </section>
-        <div class="clearfix"></div>
     </main>
     <footer>
         <section id="footer">
             <p>
-                &copy; creato da <a href="#">Manuel Sini</a>
+                &copy; creato da <span>Manuel Sini</span>
             </p>
-            <p>Ultimo aggiornamento <time datetime="2026-10-09">  <strong>Venerdi 8 ottobre</strong></time></p>
+            <p>Ultimo aggiornamento <time datetime="2026-10-24"><strong>24 ottobre 2026</strong></time></p>
             <p>
                 <small>tutti i diritti sono protetti dalla licenza creative commons </small>
             </p>
