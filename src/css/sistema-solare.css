@@ -52,12 +52,18 @@ h1{
     display: flex;
     justify-content: flex-end;
 }
-.navbar_second_level > ul > li > a {
+.navbar_second_level > ul > li > a,
+.navbar_second_level > ul > li.nav-pianeti > button {
     display: block;
     color: white;
     text-decoration: none;
     padding: 14px;
-
+}
+.navbar_second_level > ul > li.nav-pianeti > button {
+    border: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
 }
 .navbar_second_level > ul > li.nav-pianeti:hover > ul.pianeti,
 .navbar_second_level > ul > li.nav-pianeti:focus-within > ul.pianeti{
@@ -161,17 +167,13 @@ section.card{
     color: inherit;
     text-decoration: none;
 }
-section.card:hover > header.header,
-section.card:focus-within > header.header,
-.card-link:hover > header.header,
-.card-link:focus-visible > header.header{
-    background-color: rgb(0, 44, 140);
-}
+
 section.card:hover > header.header h2,
 section.card:focus-within > header.header h2,
 .card-link:hover > header.header h2,
 .card-link:focus-visible > header.header h2{
     color: #fca311ff;
+    background-color: rgb(0, 44, 140);
 }
 .clearfix{
     clear: both;
@@ -223,7 +225,7 @@ section#footer p{
 
 @media (max-width: 900px){
     main#pianeti{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
@@ -242,7 +244,8 @@ section#footer p{
     .navbar_second_level > ul{
         justify-content: center;
     }
-    .navbar_second_level > ul > li > a{
+    .navbar_second_level > ul > li > a,
+    .navbar_second_level > ul > li.nav-pianeti > button{
         padding: 12px 8px;
         font-size: 0.85rem;
     }

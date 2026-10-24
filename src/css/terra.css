@@ -50,11 +50,18 @@ h1{
     display: flex;
     justify-content: flex-end;
 }
-.navbar_second_level > ul > li > a {
+.navbar_second_level > ul > li > a,
+.navbar_second_level > ul > li.nav-pianeti > button {
     display: block;
     color: white;
     text-decoration: none;
     padding: 14px;
+}
+.navbar_second_level > ul > li.nav-pianeti > button {
+    border: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
 }
 .navbar_second_level > ul > li.nav-pianeti:hover > ul.pianeti,
 .navbar_second_level > ul > li.nav-pianeti:focus-within > ul.pianeti{
@@ -164,7 +171,8 @@ section#footer p a{
     .navbar_second_level > ul{
         justify-content: center;
     }
-    .navbar_second_level > ul > li > a{
+    .navbar_second_level > ul > li > a,
+    .navbar_second_level > ul > li.nav-pianeti > button{
         padding: 12px 8px;
         font-size: 0.85rem;
     }
